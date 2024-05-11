@@ -1,0 +1,118 @@
+/* Styles Media Query For Desktop Low End 1280×720 & 1920×1080 */
+body {
+    font-family: var(--font-family-primary);
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  /* H1 */
+  .website-title { 
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid red;
+    margin: 15px 0px 20px 0px;
+    font-size: initial;
+  }
+  
+  .grid-container { 
+    border: 2px solid blue;
+    margin: 0.5rem;
+    max-width: auto;
+    display: grid;
+    grid-auto-columns: 1fr;
+    gap: 1rem;
+    grid-template-areas: 
+    "section1 section2"
+    "section3 section3"
+    "section4 section5"
+    ;
+    /* --container-height: calc(100vh - 15vh);
+    height: var(--container-height); */
+    min-height: 90vh;
+  }
+  
+  /* Do the next two css selectors work?  */
+  /* SECTION SELECTOR * 5 */
+  section { 
+    border: 2px solid black;
+    /* background-color: ; */
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column ;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    transition: all 1ms ease;
+    /* height: calc((var(--container-height) - 59vh)); */
+    /* justify-content: center; */
+  }
+  
+  section:hover {
+    cursor: pointer;
+    background-color: rgb(208, 194, 194);
+    outline: 1px solid #817b7b;
+  }
+  
+  
+  /* H3 */
+  .section-heading{
+    font-size: initial;
+  }
+  
+  .section-1 {
+    background-color: #85a832;
+    grid-area: section1;
+  }
+  .icon {
+    border: 2px solid;
+  }
+  
+  .section-2 {
+    background-color: #de99dd;
+    grid-area: section2;
+  
+  }
+  
+  .section-3 {
+    background-color: #ffb915;
+    grid-area: section3;
+    /* border-radius: 500px; */
+  }
+  
+  .section-4 {
+  background-color: #bf6767;
+  grid-area: section4;
+  }
+  
+  .section-5 {
+    background-color: #39c4ef;
+    grid-area: section5;
+  }
+
+@media (max-width: 955px) {
+.website-title { 
+    display: flex;
+    justify-content: center;
+    border: 2px solid red;
+    margin: 15px 0px 20px 0px;
+
+}
+
+.grid-container {
+    grid-template-areas: 
+    "section1 "
+    "section2 "
+    "section3 "
+    "section4 "
+    "section5 "
+    ;
+    /* --container-height: calc(100vh - 15vh);
+    height: var(--container-height); */
+    min-height: 93vh;
+}
+  
+  }
+
+  
+  
